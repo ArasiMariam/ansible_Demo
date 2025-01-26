@@ -5,6 +5,7 @@ pipeline{
         steps{
         ansiblePlaybook credentialsId: 'ssh-key', inventory: 'hosts', playbook: 'nginx_install.yaml', vaultTmpPath: ''
         
+        
         }
       }
   }
